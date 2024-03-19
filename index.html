@@ -31,6 +31,17 @@
             tg.MainButton.show()
         }
     });
+    let btnED = document.getElementById("btnED");
+    btnED.addEventListener("click", function(){
+        if (tg.MainButton.isActive){
+            tg.MainButton.setPrams({"color": "#E0FFFF"});
+            tg.Mainbutton.disable()
+        }
+        else{
+            tg.MainButton.setParams({"color": "#143F6B"});
+            tg.MainButton.disable()
+        }
+    });
     Telegram.Webapp.onEvent("mainButtonClicked", function(){
         tg.sendData("some string that we need to send");
     });
