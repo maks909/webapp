@@ -42,7 +42,7 @@
             tg.MainButton.enable()
         }
     });
-    Telegram.Webapp.onEvent("mainButtonClicked", function(){
+    Telegram.WebaApp.onEvent("mainButtonClicked", function(){
         tg.sendData("some string that we need to send");
     });
     
