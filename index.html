@@ -24,6 +24,7 @@
     tg.MainButton.color = "#143F6B";
     tg.MainButton.setParams({"color": "#143F6B"});
     btn.addEventListener("click", function(){
+        console.log("Hello world!2");
         if (tg.MainButton.isVisible){
             tg.MainButton.hide()
         }
@@ -43,6 +44,7 @@
         }
     });
     Telegram.WebApp.onEvent("mainButtonClicked", function(){
+        console.log("Hello world!");
         tg.sendData("some string that we need to send");
     });
     
